@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Word Lookup",
+  "version": "1.0",
+  "description": "Look up definitions for selected words",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "css": ["tooltip.css"],
+    "js": ["content.js"]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["tooltip.css"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

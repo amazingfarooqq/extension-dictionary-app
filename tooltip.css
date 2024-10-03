@@ -1,0 +1,76 @@
+.word-lookup-tooltip {
+    position: absolute;
+    z-index: 10000;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .word-lookup-tooltip .word {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .word-lookup-tooltip .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .word-lookup-tooltip .loading-spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .word-lookup-tooltip .phonetic {
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .word-lookup-tooltip .meaning {
+    margin-bottom: 12px;
+  }
+  
+  .word-lookup-tooltip .part-of-speech {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 4px;
+  }
+  
+  .word-lookup-tooltip .definition {
+    margin-bottom: 8px;
+  }
+  
+  .word-lookup-tooltip .example {
+    color: #666;
+    font-style: italic;
+    margin-left: 12px;
+    font-size: 13px;
+  }
+  
+  .word-lookup-tooltip .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+    line-height: 1;
+  }
