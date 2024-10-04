@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Word Lookup",
+  "name": "Word Lookup App",
   "version": "1.0",
   "description": "Look up definitions for selected words",
   "permissions": [
